@@ -180,6 +180,7 @@ function maximize(manmade = 0) {
 let deltaTime;
 const calculate = window.setInterval(() => {
   deltaTime = Date.now() - game.lastTick;
+  deltaTime *= 1000
   loop(deltaTime);
   clickCoolDown--;
 }, game.msint);
